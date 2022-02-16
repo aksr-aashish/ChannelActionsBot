@@ -82,7 +82,7 @@ def get_all(var):  # Returns List
 async def get_me():
     me = await bot.get_me()
     myname = me.username
-    return "@" + myname
+    return f'@{myname}'
 
 
 bot_username = bot.loop.run_until_complete(get_me())
